@@ -1,17 +1,18 @@
 <template>
   <d2-container :filename="filename">
-    <template slot="header">Page 2 header</template>
-    Hello World
+    <LyTable></LyTable>
   </d2-container>
 </template>
 
 <script>
+import LyTable from "@/components/table/ly-table";
 export default {
-  name: 'page2',
-  data () {
+  name: "page2",
+  components: { LyTable },
+  data() {
     return {
       filename: __filename
-    }
+    };
   }
-}
+};
 </script>

@@ -1,23 +1,20 @@
 <!--  -->
 <template>
   <div>
-    <LyDialog
-      :title="item.title"
-      :visible="item.visible"
-      :componentId="item.component"
-      v-for="(item, index) in dialogs"
-      :key="index"
-    ></LyDialog>
+    <LyDialog v-bind="item" v-for="(item, index) in dialogs" :key="index"></LyDialog>
   </div>
 </template>
 <script>
 import LyDialog from "./ly-dialog";
+import { mapState } from "vuex";
 export default {
   name: "dialogs",
-  props: { dialogs: Array },
   components: { LyDialog },
   data() {
     return {};
+  },
+  computed: {
+    ...mapState("ly/dialog", ["dialogs"])
   }
 };
 </script>

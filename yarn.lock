@@ -583,6 +583,17 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@d2-projects/d2-crud@^2.0.5":
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/@d2-projects/d2-crud/download/@d2-projects/d2-crud-2.0.5.tgz#8c4bba8736275ceee2e21eae7cc9a350132eaa1b"
+  integrity sha1-jEu6hzYnXO7i4h6ufMmjUBMuqhs=
+  dependencies:
+    lodash.clonedeep "^4.5.0"
+    lodash.foreach "^4.5.0"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    vue "^2.5.19"
+
 "@d2-projects/vue-filters-date@^1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@d2-projects/vue-filters-date/-/vue-filters-date-1.0.2.tgz#2102ab923f3566519f7656a8e74a1712f4005219"
@@ -5369,7 +5380,7 @@ lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npmjs.org/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
 
-lodash.clonedeep@^4.3.2:
+lodash.clonedeep@^4.3.2, lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
 
@@ -5380,6 +5391,16 @@ lodash.debounce@^4.0.8:
 lodash.defaultsdeep@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
+
+lodash.foreach@^4.5.0:
+  version "4.5.0"
+  resolved "http://registry.npm.taobao.org/lodash.foreach/download/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
+  integrity sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
+
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "http://registry.npm.taobao.org/lodash.get/download/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
@@ -5396,6 +5417,11 @@ lodash.memoize@^4.1.2:
 lodash.mergewith@^4.6.0:
   version "4.6.1"
   resolved "https://registry.npmjs.org/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
+
+lodash.set@^4.3.2:
+  version "4.3.2"
+  resolved "http://registry.npm.taobao.org/lodash.set/download/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
+  integrity sha1-2HV7HagH3eJIFrDWqEvqGnYjCyM=
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -8685,6 +8711,11 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.11, vue@^2.5.17:
   version "2.5.22"
   resolved "https://registry.npmjs.org/vue/-/vue-2.5.22.tgz#3bf88041af08b8539c37b268b70ca79245e9cc30"
+
+vue@^2.5.19:
+  version "2.6.10"
+  resolved "http://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
 
 vuex@^3.0.1:
   version "3.0.1"

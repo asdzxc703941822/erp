@@ -11,19 +11,23 @@ process.env.VUE_APP_BUILD_TIME = require('dayjs')().format('YYYY-M-D HH:mm:ss')
 let publicPath = '/'
 
 module.exports = {
-  publicPath, // 根据你的实际情况更改这里
+  // 根据你的实际情况更改这里
+  publicPath,
+
   lintOnSave: true,
+
   devServer: {
     publicPath // 和 publicPath 保持一致
   },
+
   css: {
     loaderOptions: {
-      // 设置 scss 公用变量文件
       sass: {
-        data: `@import '~@/assets/style/public.scss';`
+        data: '@import \'~@/assets/style/public.scss\';'
       }
     }
   },
+
   // 默认设置: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config/base.js
   chainWebpack: config => {
     /**
@@ -110,5 +114,12 @@ module.exports = {
         .add('@/mock')
         .end()
     }
-  }
+  },
+
+  baseUrl: undefined,
+  outputDir: undefined,
+  assetsDir: undefined,
+  runtimeCompiler: true,
+  productionSourceMap: undefined,
+  parallel: undefined
 }

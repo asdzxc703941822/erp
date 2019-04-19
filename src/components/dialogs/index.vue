@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import LyDialog from "./ly-dialog";
+import LyDialog from "./LyDialog";
 import { mapState } from "vuex";
 export default {
   name: "dialogs",

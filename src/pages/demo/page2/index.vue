@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import LyTable from "@/components/table/ly-table";
+import LyTable from "@/components/table/LyTable";
 export default {
   name: "page2",
   components: { LyTable },

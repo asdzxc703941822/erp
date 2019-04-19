@@ -2,13 +2,12 @@
 <template>
   <div>
     <div>
-      <el-button @click="clearSelection">取消选择</el-button>
+      <el-button @click="clearSelection" size="mini">取消选择</el-button>
     </div>
     <el-table
       ref="table"
       :data="data"
       v-bind="options"
-      style="width: 100%"
       @current-change="onCurrentChange"
       @selection-change="onSelectionChange"
     >
@@ -19,7 +18,7 @@
   </div>
 </template>
 <script>
-import repeatColumns from "./repeatColumns";
+import repeatColumns from "./RepeatColumns";
 export default {
   name: "LyTable",
   components: { repeatColumns },
@@ -64,6 +63,7 @@ export default {
           headerAlign: headerAlign || "center",
           prop,
           label,
+
           ...other
         };
       }

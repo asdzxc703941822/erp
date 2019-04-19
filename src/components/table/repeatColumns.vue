@@ -18,7 +18,7 @@ export default {
           props: { ...col },
           key: index,
           scopedSlots: {
-            default: props => h("el-input", "xx")
+            //  default: props => h("el-input", "xx")
           }
         },
         h("repeatColumns", {
